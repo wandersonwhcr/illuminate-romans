@@ -24,3 +24,15 @@ package { "apt-get : https":
     name    => "apt-transport-https",
     require => Exec["apt-get : https-update"],
 }
+
+package { "vim":
+    name => "vim",
+}
+
+package { "git":
+    name => "git",
+}
+
+package { "unzip":
+    name => "unzip",
+}
