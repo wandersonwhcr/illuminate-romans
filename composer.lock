@@ -4,8 +4,60 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "31964ee71276ee09bf8081dea30ce53b",
-    "packages": [],
+    "content-hash": "6ff2a25cbda823d3c5d9a6e0b1902e95",
+    "packages": [
+        {
+            "name": "wandersonwhcr/romans",
+            "version": "v1.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wandersonwhcr/romans.git",
+                "reference": "9c93fab380cb2aa9fc14bfbd7f7da09cc72071fc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wandersonwhcr/romans/zipball/9c93fab380cb2aa9fc14bfbd7f7da09cc72071fc",
+                "reference": "9c93fab380cb2aa9fc14bfbd7f7da09cc72071fc",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0"
+            },
+            "require-dev": {
+                "jakub-onderka/php-parallel-lint": "0.9.*",
+                "phpmd/phpmd": "2.6.*",
+                "phpunit/phpunit": "6.1.*",
+                "sebastian/phpcpd": "3.0.*",
+                "squizlabs/php_codesniffer": "2.8.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Romans\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A Simple PHP Roman Numerals Library",
+            "keywords": [
+                "converter",
+                "filter",
+                "format",
+                "roman",
+                "roman-number",
+                "roman-numeral",
+                "validator"
+            ],
+            "time": "2017-04-23T14:35:39+00:00"
+        }
+    ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",

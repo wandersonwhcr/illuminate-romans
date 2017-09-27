@@ -5,6 +5,7 @@
     "license": "MIT",
     "keywords": ["laravel", "illuminate", "roman", "roman-number", "roman-numeral", "converter", "format", "validator"],
     "require": {
-        "php": "^7.0"
+        "php": "^7.0",
+        "wandersonwhcr/romans": "^1.0"
     }
 }
