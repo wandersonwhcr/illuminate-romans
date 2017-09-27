@@ -4,5 +4,7 @@
     "type": "library",
     "license": "MIT",
     "keywords": ["laravel", "illuminate", "roman", "roman-number", "roman-numeral", "converter", "format", "validator"],
-    "require": {}
+    "require": {
+        "php": "^7.0"
+    }
 }
