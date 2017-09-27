@@ -1,0 +1,7 @@
+{
+    "name": "wandersonwhcr/illuminate-romans",
+    "description": "Laravel Illuminate Romans Integration",
+    "type": "library",
+    "license": "MIT",
+    "require": {}
+}
