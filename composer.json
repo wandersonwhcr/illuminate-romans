@@ -3,5 +3,6 @@
     "description": "Laravel Illuminate Romans Integration",
     "type": "library",
     "license": "MIT",
+    "keywords": ["laravel", "illuminate", "roman", "roman-number", "roman-numeral", "converter", "format", "validator"],
     "require": {}
 }
