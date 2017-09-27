@@ -7,5 +7,10 @@
     "require": {
         "php": "^7.0",
         "wandersonwhcr/romans": "^1.0"
+    },
+    "extras": {
+        "branch-alias": {
+            "dev-develop": "1.0.x-dev"
+        }
     }
 }
