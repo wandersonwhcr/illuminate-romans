@@ -1,0 +1,16 @@
+{
+    "name": "wandersonwhcr/illuminate-romans",
+    "description": "Laravel Illuminate Romans Integration",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["laravel", "illuminate", "roman", "roman-number", "roman-numeral", "converter", "format", "validator"],
+    "require": {
+        "php": "^7.0",
+        "wandersonwhcr/romans": "^1.0"
+    },
+    "extras": {
+        "branch-alias": {
+            "dev-develop": "1.0.x-dev"
+        }
+    }
+}
