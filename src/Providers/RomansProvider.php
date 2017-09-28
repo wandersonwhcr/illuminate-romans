@@ -37,5 +37,9 @@ class RomansProvider extends ServiceProvider
     public function register()
     {
         $this->app->bind(Grammar::class);
+
+        $this->app->bind(Lexer::class);
+
+        $this->app->bind(Parser::class);
     }
 }
