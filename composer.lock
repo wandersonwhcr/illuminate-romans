@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "dce82aca06247dd1fc25ddf50aed32ea",
+    "content-hash": "18e4bc2abddec1c0df8a41e487df50df",
     "packages": [
         {
             "name": "wandersonwhcr/romans",
