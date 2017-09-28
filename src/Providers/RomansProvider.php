@@ -4,6 +4,8 @@ namespace Illuminate\Romans\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Romans\Grammar\Grammar;
+use Romans\Lexer\Lexer;
+use Romans\Parser\Parser;
 
 /**
  * Romans Provider
@@ -22,6 +24,8 @@ class RomansProvider extends ServiceProvider
     {
         return [
             Grammar::class,
+            Lexer::class,
+            Parser::class,
         ];
     }
 }

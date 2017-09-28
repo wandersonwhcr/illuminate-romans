@@ -7,6 +7,8 @@ use Illuminate\Support\ServiceProvider;
 use IlluminateTest\Romans\Foundation\Application;
 use PHPUnit\Framework\TestCase;
 use Romans\Grammar\Grammar;
+use Romans\Lexer\Lexer;
+use Romans\Parser\Parser;
 
 class RomansProviderTest extends TestCase
 {
@@ -31,5 +33,7 @@ class RomansProviderTest extends TestCase
         $provides = $this->provider->provides();
 
         $this->assertContains(Grammar::class, $provides);
+        $this->assertContains(Lexer::class, $provides);
+        $this->assertContains(Parser::class, $provides);
     }
 }
