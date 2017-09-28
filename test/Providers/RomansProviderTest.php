@@ -6,6 +6,7 @@ use Illuminate\Romans\Providers\RomansProvider;
 use Illuminate\Support\ServiceProvider;
 use IlluminateTest\Romans\Foundation\Application;
 use PHPUnit\Framework\TestCase;
+use Romans\Grammar\Grammar;
 
 class RomansProviderTest extends TestCase
 {
@@ -23,5 +24,12 @@ class RomansProviderTest extends TestCase
     public function testDeferred()
     {
         $this->assertTrue($this->provider->isDeferred());
+    }
+
+    public function testProvides()
+    {
+        $provides = $this->provider->provides();
+
+        $this->assertContains(Grammar::class, $provides);
     }
 }
