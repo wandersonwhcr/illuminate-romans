@@ -38,8 +38,8 @@ class RomansProvider extends ServiceProvider
     {
         $this->app->singleton(Grammar::class);
 
-        $this->app->bind(Lexer::class);
+        $this->app->singleton(Lexer::class);
 
-        $this->app->bind(Parser::class);
+        $this->app->singleton(Parser::class);
     }
 }
