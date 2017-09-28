@@ -9,4 +9,8 @@ use Illuminate\Support\ServiceProvider;
  */
 class RomansProvider extends ServiceProvider
 {
+    /**
+     * {@inheritdoc}
+     */
+    protected $defer = true;
 }

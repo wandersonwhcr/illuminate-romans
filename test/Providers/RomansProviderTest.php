@@ -19,4 +19,9 @@ class RomansProviderTest extends TestCase
     {
         $this->assertInstanceOf(ServiceProvider::class, $this->provider);
     }
+
+    public function testDeferred()
+    {
+        $this->assertTrue($this->provider->isDeferred());
+    }
 }
