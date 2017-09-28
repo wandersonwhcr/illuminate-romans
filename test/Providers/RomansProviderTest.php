@@ -45,4 +45,13 @@ class RomansProviderTest extends TestCase
         $this->assertTrue($this->application->bound(Lexer::class));
         $this->assertTrue($this->application->bound(Parser::class));
     }
+
+    public function testGrammar()
+    {
+        $this->provider->register();
+
+        $grammar = $this->application->make(Grammar::class);
+
+        $this->assertSame($grammar, $this->application->make(Grammar::class));
+    }
 }
