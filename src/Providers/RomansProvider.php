@@ -28,4 +28,14 @@ class RomansProvider extends ServiceProvider
             Parser::class,
         ];
     }
+
+    /**
+     * Register Romans Services
+     *
+     * @return void
+     */
+    public function register()
+    {
+        $this->app->bind(Grammar::class);
+    }
 }

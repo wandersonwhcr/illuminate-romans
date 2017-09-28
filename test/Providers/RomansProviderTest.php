@@ -36,4 +36,11 @@ class RomansProviderTest extends TestCase
         $this->assertContains(Lexer::class, $provides);
         $this->assertContains(Parser::class, $provides);
     }
+
+    public function testBind()
+    {
+        $this->provider->register();
+
+        $this->assertTrue($this->application->bound(Grammar::class));
+    }
 }
