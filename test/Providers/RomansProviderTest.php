@@ -52,6 +52,7 @@ class RomansProviderTest extends TestCase
 
         $grammar = $this->application->make(Grammar::class);
 
+        $this->assertInstanceOf(Grammar::class, $grammar);
         $this->assertSame($grammar, $this->application->make(Grammar::class));
     }
 
@@ -62,6 +63,7 @@ class RomansProviderTest extends TestCase
         $grammar = $this->application->make(Grammar::class);
         $lexer   = $this->application->make(Lexer::class);
 
+        $this->assertInstanceOf(Lexer::class, $lexer);
         $this->assertSame($lexer, $this->application->make(Lexer::class));
         $this->assertSame($grammar, $lexer->getGrammar());
     }
@@ -73,6 +75,7 @@ class RomansProviderTest extends TestCase
         $grammar = $this->application->make(Grammar::class);
         $parser  = $this->application->make(Parser::class);
 
+        $this->assertInstanceOf(Parser::class, $parser);
         $this->assertSame($parser, $this->application->make(Parser::class));
         $this->assertSame($grammar, $parser->getGrammar());
     }
