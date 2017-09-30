@@ -4,6 +4,7 @@ namespace Illuminate\Romans\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Romans\Filter\IntToRoman as IntToRomanFilter;
+use Romans\Filter\RomanToInt as RomanToIntFilter;
 use Romans\Grammar\Grammar;
 use Romans\Lexer\Lexer;
 use Romans\Parser\Parser;
@@ -28,6 +29,7 @@ class RomansProvider extends ServiceProvider
             Lexer::class,
             Parser::class,
             IntToRomanFilter::class,
+            RomanToIntFilter::class,
         ];
     }
 
@@ -45,5 +47,7 @@ class RomansProvider extends ServiceProvider
         $this->app->singleton(Parser::class);
 
         $this->app->singleton(IntToRomanFilter::class);
+
+        $this->app->singleton(RomanToIntFilter::class);
     }
 }
