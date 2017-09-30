@@ -28,6 +28,23 @@ This package provides facades and helpers to use with Laravel projects. Also,
 this package is provided as a Laravel Package, automatically configure services
 inside application.
 
+### Facades
+
+Illuminate Romans provides a couple of facades to convert a `string` with Roman
+number to `int` and Integer to a `string` that represents the input as Roman
+number.
+
+```php
+use Illuminate\Romans\Support\Facades\IntToRoman as IntToRomanFacade;
+use Illuminate\Romans\Support\Facades\RomanToInt as RomanToIntFacade;
+
+$value = 'MCMXCIX';
+
+$value = RomanToIntFacade::filter($value); // 1999
+
+$value = IntToRomanFacade::filter($value); // MCMXCIX
+```
+
 ## License
 
 This package is opensource and available under license MIT described in
