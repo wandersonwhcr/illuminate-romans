@@ -6,6 +6,7 @@ use Illuminate\Romans\Providers\RomansProvider;
 use Illuminate\Support\ServiceProvider;
 use IlluminateTest\Romans\Foundation\Application;
 use PHPUnit\Framework\TestCase;
+use Romans\Filter\IntToRoman as IntToRomanFilter;
 use Romans\Grammar\Grammar;
 use Romans\Lexer\Lexer;
 use Romans\Parser\Parser;
@@ -35,6 +36,7 @@ class RomansProviderTest extends TestCase
         $this->assertContains(Grammar::class, $provides);
         $this->assertContains(Lexer::class, $provides);
         $this->assertContains(Parser::class, $provides);
+        $this->assertContains(IntToRomanFilter::class, $provides);
     }
 
     public function testBind()
@@ -44,6 +46,7 @@ class RomansProviderTest extends TestCase
         $this->assertTrue($this->application->bound(Grammar::class));
         $this->assertTrue($this->application->bound(Lexer::class));
         $this->assertTrue($this->application->bound(Parser::class));
+        $this->assertTrue($this->application->bound(IntToRomanFilter::class));
     }
 
     public function testGrammar()
@@ -78,5 +81,15 @@ class RomansProviderTest extends TestCase
         $this->assertInstanceOf(Parser::class, $parser);
         $this->assertSame($parser, $this->application->make(Parser::class));
         $this->assertSame($grammar, $parser->getGrammar());
+    }
+
+    public function testIntToRomanFilter()
+    {
+        $this->provider->register();
+
+        $filter = $this->application->make(IntToRomanFilter::class);
+
+        $this->assertInstanceOf(IntToRomanFilter::class, $filter);
+        $this->assertSame($filter, $this->application->make(IntToRomanFilter::class));
     }
 }
