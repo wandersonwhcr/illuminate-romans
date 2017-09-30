@@ -22,6 +22,12 @@ stable version.
 }
 ```
 
+## Usage
+
+This package provides facades and helpers to use with Laravel projects. Also,
+this package is provided as a Laravel Package, automatically configure services
+inside application.
+
 ## License
 
 This package is opensource and available under license MIT described in
