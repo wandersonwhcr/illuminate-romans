@@ -49,5 +49,10 @@ class RomansProvider extends ServiceProvider
         $this->app->singleton(IntToRomanFilter::class);
 
         $this->app->singleton(RomanToIntFilter::class);
+        $this->app->resolving(RomanToIntFilter::class, function ($element, $app) {
+            $element->setLexer($app->make(Lexer::class));
+            $element->setParser($app->make(Parser::class));
+            return $element;
+        });
     }
 }

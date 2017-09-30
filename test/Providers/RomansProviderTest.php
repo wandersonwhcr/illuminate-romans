@@ -90,10 +90,12 @@ class RomansProviderTest extends TestCase
     {
         $this->provider->register();
 
-        $filter = $this->application->make(IntToRomanFilter::class);
+        $filter  = $this->application->make(IntToRomanFilter::class);
+        $grammar = $this->application->make(Grammar::class);
 
         $this->assertInstanceOf(IntToRomanFilter::class, $filter);
         $this->assertSame($filter, $this->application->make(IntToRomanFilter::class));
+        $this->assertSame($grammar, $filter->getGrammar());
     }
 
     public function testRomanToIntFilter()
@@ -101,8 +103,12 @@ class RomansProviderTest extends TestCase
         $this->provider->register();
 
         $filter = $this->application->make(RomanToIntFilter::class);
+        $lexer  = $this->application->make(Lexer::class);
+        $parser = $this->application->make(Parser::class);
 
         $this->assertInstanceOf(RomanToIntFilter::class, $filter);
         $this->assertSame($filter, $this->application->make(RomanToIntFilter::class));
+        $this->assertSame($lexer, $filter->getLexer());
+        $this->assertSame($parser, $filter->getParser());
     }
 }
