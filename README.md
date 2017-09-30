@@ -5,7 +5,8 @@ Laravel Illuminate Romans Integration
 ## Description
 
 This package provides a Laravel integration for
-[Romans](https://github.com/wandersonwhcr/romans) library.
+[Romans](https://github.com/wandersonwhcr/romans) library, providing tools to
+filter `string` with a Roman number to `int` and vice-versa.
 
 ## Installation
 
