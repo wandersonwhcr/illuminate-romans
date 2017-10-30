@@ -31,5 +31,16 @@
         "branch-alias": {
             "dev-develop": "1.0.x-dev"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Illuminate\\Romans\\Providers\\RomansProvider"
+            ],
+            "aliases": {
+                "IntToRoman": "Illuminate\\Romans\\Support\\Facades\\IntToRoman",
+                "RomanToInt": "Illuminate\\Romans\\Support\\Facades\\RomanToInt"
+            }
+        }
     }
 }
