@@ -42,5 +42,5 @@
                 "RomanToInt": "Illuminate\\Romans\\Support\\Facades\\RomanToInt"
             }
         }
-    },
+    }
 }
