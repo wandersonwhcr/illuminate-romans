@@ -35,7 +35,8 @@
         "test": [
             "parallel-lint src",
             "phpunit",
-            "phpcpd src"
+            "phpcpd src",
+            "phpmd src text phpmd.xml"
         ]
     },
     "extras": {
