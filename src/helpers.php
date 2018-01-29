@@ -10,7 +10,8 @@ if (! function_exists('int_to_roman')) {
      * @param  mixed $value Integer
      * @return mixed Roman Number Result
      */
-    function int_to_roman($value) {
+    function int_to_roman($value)
+    {
         // IntToRoman Facade
         return IntToRoman::filter($value);
     }
@@ -23,7 +24,8 @@ if (! function_exists('roman_to_int')) {
      * @param  mixed $value Roman Number
      * @return mixed Integer
      */
-    function roman_to_int($value) {
+    function roman_to_int($value)
+    {
         // RomanToInt Facade
         return RomanToInt::filter($value);
     }
