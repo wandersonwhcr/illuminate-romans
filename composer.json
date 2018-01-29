@@ -33,7 +33,8 @@
     "scripts": {
         "test": [
             "parallel-lint src",
-            "phpunit"
+            "phpunit",
+            "phpcpd src"
         ]
     },
     "extras": {
