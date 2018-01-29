@@ -10,9 +10,14 @@
         "illuminate/support": "^5.5"
     },
     "require-dev": {
-        "phpunit/phpunit": "^6.3",
+        "doctrine/instantiator": "^1.0",
         "illuminate/container": "^5.5",
-        "illuminate/contracts": "^5.5"
+        "illuminate/contracts": "^5.5",
+        "jakub-onderka/php-parallel-lint": "^0.9",
+        "phpmd/phpmd": "^2.6",
+        "phpunit/phpunit": "^6.3",
+        "sebastian/phpcpd": "^3.0",
+        "squizlabs/php_codesniffer": "^2.8"
     },
     "autoload": {
         "psr-4": {
@@ -26,6 +31,15 @@
         "psr-4": {
             "IlluminateTest\\Romans\\": "test/"
         }
+    },
+    "scripts": {
+        "test": [
+            "parallel-lint src",
+            "phpunit",
+            "phpcpd src",
+            "phpmd src text phpmd.xml",
+            "phpcs"
+        ]
     },
     "extras": {
         "branch-alias": {
