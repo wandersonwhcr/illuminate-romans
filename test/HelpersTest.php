@@ -6,6 +6,8 @@ use Illuminate\Romans\Support\Facades\IntToRoman;
 use Illuminate\Romans\Support\Facades\RomanToInt;
 use IlluminateTest\Romans\Foundation\Application;
 use PHPUnit\Framework\TestCase;
+use Romans\Filter\IntToRoman as IntToRomanFilter;
+use Romans\Filter\RomanToInt as RomanToIntFilter;
 
 class HelpersTest extends TestCase
 {
@@ -15,6 +17,9 @@ class HelpersTest extends TestCase
 
         IntToRoman::setFacadeApplication($this->application);
         RomanToInt::setFacadeApplication($this->application);
+
+        $this->application->alias(IntToRomanFilter::class, 'intToRoman');
+        $this->application->alias(RomanToIntFilter::class, 'romanToInt');
     }
 
     public function testIntToRoman()
