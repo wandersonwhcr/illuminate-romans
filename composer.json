@@ -27,6 +27,11 @@
             "IlluminateTest\\Romans\\": "test/"
         }
     },
+    "scripts": {
+        "test": [
+            "phpunit"
+        ]
+    },
     "extras": {
         "branch-alias": {
             "dev-develop": "1.0.x-dev"
