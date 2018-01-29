@@ -111,4 +111,15 @@ class RomansProviderTest extends TestCase
         $this->assertSame($lexer, $filter->getLexer());
         $this->assertSame($parser, $filter->getParser());
     }
+
+    public function testAliases()
+    {
+        $this->provider->register();
+
+        $this->assertTrue($this->application->bound('intToRoman'));
+        $this->assertTrue($this->application->bound('romanToInt'));
+
+        $this->assertSame($this->application->make(IntToRomanFilter::class), $this->application->make('intToRoman'));
+        $this->assertSame($this->application->make(RomanToIntFilter::class), $this->application->make('romanToInt'));
+    }
 }

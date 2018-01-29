@@ -54,5 +54,8 @@ class RomansProvider extends ServiceProvider
             $element->setParser($app->make(Parser::class));
             return $element;
         });
+
+        $this->app->alias(IntToRomanFilter::class, 'intToRoman');
+        $this->app->alias(RomanToIntFilter::class, 'romanToInt');
     }
 }
