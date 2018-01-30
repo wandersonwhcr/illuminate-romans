@@ -15,6 +15,6 @@ class IntToRoman extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'intToRoman';
+        return IntToRomanFilter::class;
     }
 }

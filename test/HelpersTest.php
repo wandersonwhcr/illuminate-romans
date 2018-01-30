@@ -17,9 +17,6 @@ class HelpersTest extends TestCase
 
         IntToRoman::setFacadeApplication($this->application);
         RomanToInt::setFacadeApplication($this->application);
-
-        $this->application->alias(IntToRomanFilter::class, 'intToRoman');
-        $this->application->alias(RomanToIntFilter::class, 'romanToInt');
     }
 
     public function testIntToRoman()
