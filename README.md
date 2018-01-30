@@ -2,6 +2,10 @@
 
 Laravel Illuminate Romans Integration
 
+[![Build Status](https://travis-ci.org/wandersonwhcr/illuminate-romans.svg?branch=master)](https://travis-ci.org/wandersonwhcr/illuminate-romans)
+[![Latest Stable Version](https://poser.pugx.org/wandersonwhcr/illuminate-romans/v/stable?format=flat)](https://packagist.org/packages/wandersonwhcr/illuminate-romans)
+[![License](https://poser.pugx.org/wandersonwhcr/illuminate-romans/license?format=flat)](https://packagist.org/packages/wandersonwhcr/illuminate-romans)
+
 ## Description
 
 This package provides a Laravel integration for
