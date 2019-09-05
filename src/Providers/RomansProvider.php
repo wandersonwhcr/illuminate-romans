@@ -2,6 +2,7 @@
 
 namespace Illuminate\Romans\Providers;
 
+use Illuminate\Contracts\Support\DeferrableProvider;
 use Illuminate\Support\ServiceProvider;
 use Romans\Filter\IntToRoman as IntToRomanFilter;
 use Romans\Filter\RomanToInt as RomanToIntFilter;
@@ -12,7 +13,7 @@ use Romans\Parser\Parser;
 /**
  * Romans Provider
  */
-class RomansProvider extends ServiceProvider
+class RomansProvider extends ServiceProvider implements DeferrableProvider
 {
     /**
      * {@inheritdoc}
