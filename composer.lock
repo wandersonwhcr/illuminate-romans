@@ -75,7 +75,7 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v6.0.0",
+            "version": "v6.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
@@ -119,16 +119,16 @@
         },
         {
             "name": "illuminate/support",
-            "version": "v6.0.0",
+            "version": "v6.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "9f1dc5486c2e9d25e33a9239e5ae088d876ef805"
+                "reference": "64669342920e11fb91bd1af838e3d69dac525eae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/9f1dc5486c2e9d25e33a9239e5ae088d876ef805",
-                "reference": "9f1dc5486c2e9d25e33a9239e5ae088d876ef805",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/64669342920e11fb91bd1af838e3d69dac525eae",
+                "reference": "64669342920e11fb91bd1af838e3d69dac525eae",
                 "shasum": ""
             },
             "require": {
@@ -176,7 +176,7 @@
             ],
             "description": "The Illuminate Support package.",
             "homepage": "https://laravel.com",
-            "time": "2019-09-03T13:35:30+00:00"
+            "time": "2019-09-03T17:25:40+00:00"
         },
         {
             "name": "nesbot/carbon",
@@ -645,7 +645,7 @@
         },
         {
             "name": "illuminate/container",
-            "version": "v6.0.0",
+            "version": "v6.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/container.git",
