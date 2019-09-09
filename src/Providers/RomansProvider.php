@@ -18,11 +18,6 @@ class RomansProvider extends ServiceProvider implements DeferrableProvider
     /**
      * {@inheritdoc}
      */
-    protected $defer = true;
-
-    /**
-     * {@inheritdoc}
-     */
     public function provides()
     {
         return [
