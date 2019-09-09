@@ -5,14 +5,14 @@
     "license": "MIT",
     "keywords": ["laravel", "illuminate", "roman", "roman-number", "roman-numeral", "converter", "format", "validator"],
     "require": {
-        "php": ">=7.0",
+        "php": ">=7.2",
         "wandersonwhcr/romans": "^1.0",
-        "illuminate/support": "^5.5"
+        "illuminate/support": "^6.0"
     },
     "require-dev": {
         "doctrine/instantiator": "^1.0",
-        "illuminate/container": "^5.5",
-        "illuminate/contracts": "^5.5",
+        "illuminate/container": "^6.0",
+        "illuminate/contracts": "^6.0",
         "jakub-onderka/php-parallel-lint": "^0.9",
         "phpmd/phpmd": "^2.6",
         "phpunit/phpunit": "^6.3",
@@ -41,12 +41,10 @@
             "phpcs"
         ]
     },
-    "extras": {
+    "extra": {
         "branch-alias": {
             "dev-develop": "1.0.x-dev"
-        }
-    },
-    "extra": {
+        },
         "laravel": {
             "providers": [
                 "Illuminate\\Romans\\Providers\\RomansProvider"
