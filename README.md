@@ -21,7 +21,7 @@ stable version.
 ```json
 {
     "require": {
-        "wandersonwhcr/illuminate-romans": "^1.0"
+        "wandersonwhcr/illuminate-romans": "^2.0"
     }
 }
 ```
@@ -29,13 +29,13 @@ stable version.
 ## Usage
 
 This package provides facades and helpers to use with Laravel projects. Also,
-this package is provided as a Laravel Package, automatically configure services
-inside application.
+this package is provided as a Laravel Package to automatically configure
+services inside application.
 
 ### Facades
 
 Illuminate Romans provides a couple of facades to convert a `string` with Roman
-number to `int` and Integer to a `string` that represents the input as Roman
+number to `int` and an Integer to a `string` that represents the input as Roman
 number.
 
 ```php
