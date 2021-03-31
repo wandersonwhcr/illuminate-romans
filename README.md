@@ -75,4 +75,4 @@ docker-compose exec romans composer test
 ## License
 
 This package is opensource and available under license MIT described in
-[LICENSE](https://github.com/wandersonwhcr/laravel-romans/blob/master/LICENSE).
+[LICENSE](https://github.com/wandersonwhcr/laravel-romans/blob/main/LICENSE).
