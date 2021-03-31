@@ -2,6 +2,7 @@
 
 Laravel Illuminate Romans Integration
 
+[![Build Status](https://github.com/wandersonwhcr/illuminate-romans/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/wandersonwhcr/illuminate-romans/actions/workflows/test.yml?query=branch%3Amain)
 [![Latest Stable Version](https://poser.pugx.org/wandersonwhcr/illuminate-romans/v/stable?format=flat)](https://packagist.org/packages/wandersonwhcr/illuminate-romans)
 [![License](https://poser.pugx.org/wandersonwhcr/illuminate-romans/license?format=flat)](https://packagist.org/packages/wandersonwhcr/illuminate-romans)
 
