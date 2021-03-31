@@ -10,7 +10,7 @@
         "illuminate/support": "^6.0"
     },
     "require-dev": {
-        "doctrine/instantiator": "^1.0",
+        "doctrine/instantiator": "^1.4",
         "illuminate/container": "^6.0",
         "illuminate/contracts": "^6.0",
         "jakub-onderka/php-parallel-lint": "^0.9",
