@@ -2,7 +2,7 @@
 
 Laravel Illuminate Romans Integration
 
-[![Build Status](https://travis-ci.org/wandersonwhcr/illuminate-romans.svg?branch=master)](https://travis-ci.org/wandersonwhcr/illuminate-romans)
+[![Build Status](https://github.com/wandersonwhcr/illuminate-romans/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/wandersonwhcr/illuminate-romans/actions/workflows/test.yml?query=branch%3Amain)
 [![Latest Stable Version](https://poser.pugx.org/wandersonwhcr/illuminate-romans/v/stable?format=flat)](https://packagist.org/packages/wandersonwhcr/illuminate-romans)
 [![License](https://poser.pugx.org/wandersonwhcr/illuminate-romans/license?format=flat)](https://packagist.org/packages/wandersonwhcr/illuminate-romans)
 
@@ -59,7 +59,20 @@ $value = roman_to_int($value); // 1999
 $value = int_to_roman($value); // MCMXCIX
 ```
 
+## Development
+
+You can use Docker Compose to build an image and run a container to develop and
+test this package.
+
+```bash
+docker-compose up --detach
+
+docker-compose exec romans composer install
+
+docker-compose exec romans composer test
+```
+
 ## License
 
 This package is opensource and available under license MIT described in
-[LICENSE](https://github.com/wandersonwhcr/laravel-romans/blob/master/LICENSE).
+[LICENSE](https://github.com/wandersonwhcr/laravel-romans/blob/main/LICENSE).
