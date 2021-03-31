@@ -14,7 +14,7 @@ use Romans\Parser\Parser;
 
 class RomansProviderTest extends TestCase
 {
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->application = $this->getMockForAbstractClass(Application::class);
         $this->provider    = new RomansProvider($this->application);

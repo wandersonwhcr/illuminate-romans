@@ -10,7 +10,7 @@ use Romans\Filter\IntToRoman as IntToRomanFilter;
 
 class IntToRomanTest extends TestCase
 {
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->application = $this->getMockForAbstractClass(Application::class);
 
