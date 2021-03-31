@@ -59,6 +59,19 @@ $value = roman_to_int($value); // 1999
 $value = int_to_roman($value); // MCMXCIX
 ```
 
+## Development
+
+You can use Docker Compose to build an image and run a container to develop and
+test this package.
+
+```bash
+docker-compose up --detach
+
+docker-compose exec romans composer install
+
+docker-compose exec romans composer test
+```
+
 ## License
 
 This package is opensource and available under license MIT described in
