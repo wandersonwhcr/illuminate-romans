@@ -42,9 +42,6 @@
         ]
     },
     "extra": {
-        "branch-alias": {
-            "dev-develop": "1.0.x-dev"
-        },
         "laravel": {
             "providers": [
                 "Illuminate\\Romans\\Providers\\RomansProvider"
