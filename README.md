@@ -28,9 +28,9 @@ stable version.
 
 ## Usage
 
-This package provides facades and helpers to use with Laravel projects. Also,
-this package is provided as a Laravel Package to automatically configure
-services inside application.
+This package provides facades and helpers to use with Laravel projects. Also, it
+was developed as a Laravel Package to automatically configure services inside
+application.
 
 ### Facades
 
