@@ -20,17 +20,17 @@ stable version.
 
 ```json
 {
-    "require": {
-        "wandersonwhcr/illuminate-romans": "^2.0"
-    }
+  "require": {
+    "wandersonwhcr/illuminate-romans": "^3.0"
+  }
 }
 ```
 
 ## Usage
 
-This package provides facades and helpers to use with Laravel projects. Also,
-this package is provided as a Laravel Package to automatically configure
-services inside application.
+This package provides facades and helpers to use with Laravel projects. Also, it
+was developed as a Laravel Package to automatically configure services inside
+application.
 
 ### Facades
 
@@ -66,11 +66,11 @@ test this package.
 
 ```bash
 docker-compose build
-docker-compose run romans composer install
-docker-compose run romans composer test
+docker-compose run --rm romans composer install
+docker-compose run --rm romans composer test
 ```
 
 ## License
 
-This package is opensource and available under license MIT described in
+This package is opensource and available under MIT license described in
 [LICENSE](https://github.com/wandersonwhcr/laravel-romans/blob/main/LICENSE).
