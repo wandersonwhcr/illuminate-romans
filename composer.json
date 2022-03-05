@@ -1,55 +1,64 @@
 {
-    "name": "wandersonwhcr/illuminate-romans",
-    "description": "Laravel Illuminate Romans Integration",
-    "type": "library",
-    "license": "MIT",
-    "keywords": ["laravel", "illuminate", "roman", "roman-number", "roman-numeral", "converter", "format", "validator"],
-    "require": {
-        "php": ">=7.4",
-        "wandersonwhcr/romans": "^1.3",
-        "illuminate/support": "^8.35"
+  "name": "wandersonwhcr/illuminate-romans",
+  "description": "Laravel Illuminate Romans Integration",
+  "type": "library",
+  "license": "MIT",
+  "keywords": [
+    "laravel",
+    "illuminate",
+    "roman",
+    "roman-number",
+    "roman-numeral",
+    "converter",
+    "format",
+    "validator"
+  ],
+  "require": {
+    "php": ">=7.4",
+    "wandersonwhcr/romans": "^1.3",
+    "illuminate/support": "^8.35"
+  },
+  "require-dev": {
+    "doctrine/instantiator": "^1.4",
+    "illuminate/container": "^8.35",
+    "illuminate/contracts": "^8.35",
+    "php-parallel-lint/php-parallel-lint": "^1.0",
+    "phpmd/phpmd": "^2.9",
+    "phpunit/phpunit": "9.5.*",
+    "sebastian/phpcpd": "6.0.*",
+    "squizlabs/php_codesniffer": "^3.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Illuminate\\Romans\\": "src/"
     },
-    "require-dev": {
-        "doctrine/instantiator": "^1.4",
-        "illuminate/container": "^8.35",
-        "illuminate/contracts": "^8.35",
-        "php-parallel-lint/php-parallel-lint": "^1.0",
-        "phpmd/phpmd": "^2.9",
-        "phpunit/phpunit": "9.5.*",
-        "sebastian/phpcpd": "6.0.*",
-        "squizlabs/php_codesniffer": "^3.5"
-    },
-    "autoload": {
-        "psr-4": {
-            "Illuminate\\Romans\\": "src/"
-        },
-        "files": [
-            "src/helpers.php"
-        ]
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "IlluminateTest\\Romans\\": "test/"
-        }
-    },
-    "scripts": {
-        "test": [
-            "parallel-lint src",
-            "phpunit",
-            "phpcpd src",
-            "phpmd src text phpmd.xml",
-            "phpcs"
-        ]
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Illuminate\\Romans\\Providers\\RomansProvider"
-            ],
-            "aliases": {
-                "IntToRoman": "Illuminate\\Romans\\Support\\Facades\\IntToRoman",
-                "RomanToInt": "Illuminate\\Romans\\Support\\Facades\\RomanToInt"
-            }
-        }
+    "files": [
+      "src/helpers.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "IlluminateTest\\Romans\\": "test/"
     }
+  },
+  "scripts": {
+    "test": [
+      "parallel-lint src",
+      "phpunit",
+      "phpcpd src",
+      "phpmd src text phpmd.xml",
+      "phpcs"
+    ]
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Illuminate\\Romans\\Providers\\RomansProvider"
+      ],
+      "aliases": {
+        "IntToRoman": "Illuminate\\Romans\\Support\\Facades\\IntToRoman",
+        "RomanToInt": "Illuminate\\Romans\\Support\\Facades\\RomanToInt"
+      }
+    }
+  }
 }
