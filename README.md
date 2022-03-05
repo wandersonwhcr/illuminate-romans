@@ -20,9 +20,9 @@ stable version.
 
 ```json
 {
-    "require": {
-        "wandersonwhcr/illuminate-romans": "^2.0"
-    }
+  "require": {
+    "wandersonwhcr/illuminate-romans": "^2.0"
+  }
 }
 ```
 
